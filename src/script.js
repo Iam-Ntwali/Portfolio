@@ -31,7 +31,7 @@ function countdownUntilOnline() {
   const secondsLeft = Math.floor((timeToLaunch % (1000 * 60)) / 1000);
 
   // Format the countdown message
-  const countdownMessage = `${daysLeft} Days |${hoursLeft} Hours: ${minutesLeft} Min: ${secondsLeft} Sec!|`;
+  const countdownMessage = `${daysLeft}Days |${hoursLeft}Hours: ${minutesLeft}Min: ${secondsLeft}Sec!|`;
 
   // Return the countdown message
   return countdownMessage;
