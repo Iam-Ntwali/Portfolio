@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/coding.png" type="image/x-icon" />
     <title>Iam-Ntwali</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <style>
     body {
@@ -28,6 +36,7 @@
     }
 
     #countdown {
+      font-family: "Space Mono", sans-serif;
       font-size: 28px;
       font-weight: bold;
       margin: 20px 0;
@@ -35,7 +44,7 @@
   </style>
   <body>
     <div class="warning">
-      <h1>⚠️ Under Maintenance 🛑⏱️</h1>
+      <h1>⚠️ Site Under Maintenance 🛑⏱️</h1>
       <h1>Coming Back in: 👇</h1>
       <div id="countdown"></div>
     </div>
@@ -56,31 +65,31 @@
         // Get today's date
         const today = new Date();
 
-        // Set the target date as December 25th of the current year
-        const christmas = new Date(today.getFullYear(), 11, 25);
+        // Set the target date as December 29th of the current year
+        const countDown = new Date(today.getFullYear(), 11, 29);
 
-        // Calculate the time difference between today and Christmas
-        const timeToChristmas = christmas.getTime() - today.getTime();
+        // Calculate the time difference between today and CountDown Time
+        const timeToLaunch = countDown.getTime() - today.getTime();
 
         // Convert the time difference to days, hours, minutes, and seconds
-        const daysLeft = Math.floor(timeToChristmas / (1000 * 60 * 60 * 24));
+        const daysLeft = Math.floor(timeToLaunch / (1000 * 60 * 60 * 24));
         const hoursLeft = Math.floor(
-          (timeToChristmas % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          (timeToLaunch % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
         );
         const minutesLeft = Math.floor(
-          (timeToChristmas % (1000 * 60 * 60)) / (1000 * 60)
+          (timeToLaunch % (1000 * 60 * 60)) / (1000 * 60)
         );
-        const secondsLeft = Math.floor((timeToChristmas % (1000 * 60)) / 1000);
+        const secondsLeft = Math.floor((timeToLaunch % (1000 * 60)) / 1000);
 
         // Format the countdown message
-        const countdownMessage = `${daysLeft} Days, ${hoursLeft} Hours, ${minutesLeft} Min, and ${secondsLeft} Sec!`;
+        const countdownMessage = `${daysLeft} Days | ${hoursLeft} Hours : ${minutesLeft} Min: ${secondsLeft} Sec! |`;
 
         // Return the countdown message
         return countdownMessage;
       }
 
       const countdownMessage = countdownUntilOnline();
-      console.log(countdownMessage);
+      // console.log(countdownMessage);
     </script>
   </body>
 </html>
