@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/coding.png" type="image/x-icon" />
+    <title>Iam-Ntwali</title>
+  </head>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #111927;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 34px;
+    }
+
+    .warning {
+      color: bisque;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-y: hidden;
+    }
+
+    #countdown {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+  </style>
+  <body>
+    <div class="warning">
+      <h1>⚠️ Under Maintenance 🛑⏱️</h1>
+      <h1>Coming Back in: 👇</h1>
+      <div id="countdown"></div>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+      const countdownEl = document.getElementById("countdown");
+
+      const updateCountdown = () => {
+        const countdownMessage = countdownUntilOnline();
+        countdownEl.textContent = countdownMessage;
+      };
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      function countdownUntilOnline() {
+        // Get today's date
+        const today = new Date();
+
+        // Set the target date as December 25th of the current year
+        const christmas = new Date(today.getFullYear(), 11, 25);
+
+        // Calculate the time difference between today and Christmas
+        const timeToChristmas = christmas.getTime() - today.getTime();
+
+        // Convert the time difference to days, hours, minutes, and seconds
+        const daysLeft = Math.floor(timeToChristmas / (1000 * 60 * 60 * 24));
+        const hoursLeft = Math.floor(
+          (timeToChristmas % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutesLeft = Math.floor(
+          (timeToChristmas % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const secondsLeft = Math.floor((timeToChristmas % (1000 * 60)) / 1000);
+
+        // Format the countdown message
+        const countdownMessage = `${daysLeft} Days, ${hoursLeft} Hours, ${minutesLeft} Min, and ${secondsLeft} Sec!`;
+
+        // Return the countdown message
+        return countdownMessage;
+      }
+
+      const countdownMessage = countdownUntilOnline();
+      console.log(countdownMessage);
+    </script>
+  </body>
+</html>
