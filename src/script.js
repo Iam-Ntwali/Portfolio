@@ -15,7 +15,7 @@ function countdownUntilOnline() {
   const today = new Date();
 
   // Set the target date as December 29th of the current year
-  const countDown = new Date(today.getFullYear(), 11, 29);
+  const countDown = new Date(today.getFullYear(), 11, 31);
 
   // Calculate the time difference between today and CountDown Time
   const timeToLaunch = countDown.getTime() - today.getTime();
