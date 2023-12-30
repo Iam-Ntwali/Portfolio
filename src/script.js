@@ -14,8 +14,8 @@ function countdownUntilOnline() {
   // Get today's date
   const today = new Date();
 
-  // Set the target date as December 29th of the current year
-  const countDown = new Date(today.getFullYear(), 11, 31);
+  // Set the target date as December 31st of the current year
+  const countDown = new Date(today.getFullYear(), 12, 5);
 
   // Calculate the time difference between today and CountDown Time
   const timeToLaunch = countDown.getTime() - today.getTime();
@@ -31,7 +31,7 @@ function countdownUntilOnline() {
   const secondsLeft = Math.floor((timeToLaunch % (1000 * 60)) / 1000);
 
   // Format the countdown message
-  const countdownMessage = `${daysLeft}Days |${hoursLeft}Hours: ${minutesLeft}Min: ${secondsLeft}Sec!|`;
+  const countdownMessage = `${daysLeft}Days |${hoursLeft}H: ${minutesLeft}Min: ${secondsLeft}Sec!|`;
 
   // Return the countdown message
   return countdownMessage;
