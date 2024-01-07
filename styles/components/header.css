@@ -1,6 +1,7 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-inline: 20px;
   align-items: center;
   padding-block-start: 2rem;
   padding-block-end: 2rem;
@@ -20,11 +21,12 @@
 }
 
 .header .theme-toggle {
-  background: var(--clr-slate600);
+  background: var(--clr-dark);
   border-radius: 8px;
   width: fit-content;
   display: flex;
   user-select: none;
+  padding: 0;
 }
 
 .header .theme-toggle input[type="radio"] {
@@ -35,7 +37,7 @@
 
 .header .theme-toggle input[type="radio"]:checked+label {
   color: var(--clr-light);
-  background: var(--clr-indigo);
+  background: var(--clr-rose);
   border-radius: 8px;
 }
 
@@ -48,6 +50,13 @@
 }
 
 /* media queries */
+/* xs */
+@media (min-width: 640px) {
+  .header {
+    justify-content: space-around;
+  }
+}
+
 @media (min-width: 768px) {
   .header .logo p {
     font-size: var(--size-3xl);

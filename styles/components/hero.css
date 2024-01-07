@@ -15,7 +15,7 @@
 }
 
 .hero__subtitle {
-  background-color: rgba(78, 70, 229, 0.3);
+  background-color: rgba(78, 70, 229, 0.2);
   color: var(--clr-slate800);
   font-size: var(--size-base);
   line-height: 0.9;
@@ -40,6 +40,12 @@
   max-width: 60ch;
   font-size: var(--size-sm);
   color: var(--clr-slate600);
+}
+
+.hero-btn {
+  display: flex;
+  flex-direction: row;
+  gap: var(--size-lg);
 }
 
 .hero__btn {
@@ -109,11 +115,6 @@
 @media (min-width: 1280px) {
   .hero {
     gap: 2rem;
-  }
-
-  .hero__img {
-    width: 10rem;
-    height: 10rem;
   }
 
   .hero__subtitle {
