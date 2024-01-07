@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,6 +29,33 @@
   </head>
 
   <body>
+    <!-- Header -->
+    <header class="topbar">
+      <a href="" class="logo">
+        <img
+          src="./assets/images/Logo_dark.png"
+          alt="logo"
+          class="dark"
+          width="145"
+        />
+        <img
+          src="./assets/images/Logo_light.png"
+          alt="logo"
+          class="light"
+          width="145"
+        />
+      </a>
+      <button class="icon-btn theme-btn" data-theme-btn>
+        <span class="material-symbols-outlined dark" aria-hidden="true">
+          dark_mode
+        </span>
+        <span class="material-symbols-outlined light" aria-hidden="true">
+          light_mode
+        </span>
+        <div class="state-layer"></div>
+      </button>
+    </header>
+
     <!-- Javascript -->
     <script src="./src/script.js"></script>
   </body>
