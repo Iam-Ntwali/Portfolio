@@ -58,6 +58,10 @@
     font-size: var(--size-lg);
   }
 
+  .hero__subtitle code {
+    font-size: var(--size-4xl);
+  }
+
   .hero__description {
     font-size: var(--size-base);
   }
@@ -81,7 +85,11 @@
   }
 
   .hero__subtitle {
-    font-size: var(--size-3xl);
+    font-size: var(--size-2xl);
+  }
+
+  .hero__subtitle code {
+    font-size: var(--size-5xl);
   }
 
   .hero__title {
@@ -110,10 +118,6 @@
 
   .hero__subtitle {
     font-size: var(--size-4xl);
-  }
-
-  .hero__title {
-    font-size: var(--size-9xl);
   }
 
   .hero__description {
