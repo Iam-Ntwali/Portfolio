@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Iam-Ntwali 🚀" />
+    <meta name="description" content="Personal portfolio made with ❤️🧑🏽‍💻" />
+    <title>Iam-Ntwali 🚀</title>
+
+    <!-- favicons -->
+    <link rel="shortcut icon" href="./assets/coding.png" type="image/x-icon" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- material icons  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./src/main.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="topbar">
+      <a href="" class="logo">
+        <img
+          src="./assets/images/Logo_dark.png"
+          alt="logo"
+          class="dark"
+          width="145"
+        />
+        <img
+          src="./assets/images/Logo_light.png"
+          alt="logo"
+          class="light"
+          width="145"
+        />
+      </a>
+      <button class="icon-btn theme-btn" data-theme-btn>
+        <span class="material-symbols-outlined dark" aria-hidden="true">
+          dark_mode
+        </span>
+        <span class="material-symbols-outlined light" aria-hidden="true">
+          light_mode
+        </span>
+        <div class="state-layer"></div>
+      </button>
+    </header>
+
+    <main>
+      <article>
+        <!-- #HERO  -->
+        <section class="section hero">
+          <div class="container">
+            <figure
+              class="hero-banner img-holder"
+              style="--width: 240; height: 240"
+            >
+              <img
+                src="./assets/me 2.jpg"
+                alt="ntwali"
+                width="240"
+                height="240"
+                class="img-cover"
+              />
+            </figure>
+
+            <div class="hero-content">
+              <span class="label-large section-subtitle">
+                Software Developer 👨‍💻
+              </span>
+              <h1 class="display-small">Ntwali Pacifique</h1>
+              <p class="body-large section-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+                quibusdam in perferendis eos assumenda quaerat dignissimos quam
+                voluptatibus.
+              </p>
+              <div class="btn-wrapper">
+                <a href="mailto:donatmuhaye@gmail.com" class="chip">
+                  <span class="material-symbols-outlined" aria-hidden="true">
+                    mail
+                  </span>
+                  <span class="label-large">donatmuhaye@gmail.com</span>
+                  <div class="state-layer"></div>
+                </a>
+
+                <a href="tel:+250788845679" class="chip">
+                  <span class="material-symbols-outlined" aria-hidden="true">
+                    call
+                  </span>
+                  <span class="label-large">+250 788 845-679</span>
+                  <div class="state-layer"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="primary-tabs">
+          <button class="tab-btn active" data-tab-btn="projects">
+            <span class="tab-text title-small">Projects</span>
+
+            <div class="state-layer"></div>
+          </button>
+          <button class="tab-btn" data-tab-btn="resume">
+            <span class="tab-text title-small">Resume</span>
+
+            <div class="state-layer"></div>
+          </button>
+          <button class="tab-btn" data-tab-btn="contact">
+            <span class="tab-text title-small">Contacts</span>
+
+            <div class="state-layer"></div>
+          </button>
+          <button class="tab-btn" data-tab-btn="projects">
+            <span class="tab-text title-small">Projects</span>
+
+            <div class="state-layer"></div>
+          </button>
+        </div>
+      </article>
+    </main>
+
+    <!-- Javascript -->
+    <script src="./src/script.js"></script>
+  </body>
+</html>
