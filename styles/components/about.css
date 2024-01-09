@@ -42,9 +42,6 @@
 
 /* xs */
 @media (min-width: 475px) {
-  .about {
-    gap: 1.5rem;
-  }
 
   .about__content {
     gap: 1.5rem;
@@ -61,7 +58,6 @@
 @media (min-width: 1024px) {
   #about {
     flex-direction: row;
-    gap: 1rem;
   }
 
   .about__content {
@@ -69,7 +65,7 @@
   }
 
   .skills {
-    flex: 1;
+    flex: 1.5;
   }
 
   .about__description {

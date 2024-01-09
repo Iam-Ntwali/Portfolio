@@ -190,6 +190,10 @@ textarea {
   text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
 /* media queries */
 /* xs */
 @media (min-width: 475px) {

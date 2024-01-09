@@ -1,4 +1,4 @@
-#projects .title {
+#projectsSection .title {
   font-size: var(--size-lg);
   color: var(--clr-slate400);
   margin-bottom: 1rem;
@@ -51,7 +51,7 @@
 
 /* lg */
 @media (min-width: 1024px) {
-  #projects .title {
+  #projectsSection .title {
     font-size: var(--size-xl);
     margin-bottom: 2rem;
   }

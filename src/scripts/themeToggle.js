@@ -1,5 +1,5 @@
 const toggleTheme = document.querySelector('.theme-toggle');
-console.log(toggleTheme);
+// console.log(toggleTheme);
 
 toggleTheme.addEventListener('click', () => {
 
