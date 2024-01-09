@@ -25,6 +25,7 @@
     />
 
     <!-- stylesheets -->
+    <link rel="stylesheet" href="./styles/components/" />
     <link rel="stylesheet" href="./styles/components/about.css" />
     <link rel="stylesheet" href="./styles/components/hero.css" />
     <link rel="stylesheet" href="./styles/components/header.css" />
@@ -75,7 +76,8 @@
           <span class="tab-text title">Contact</span>
         </button>
       </section>
-      <section id="about" class="active-tab__content container">
+
+      <section id="about" class="active-tab__content section container">
         <div class="about__content">
           <p class="about__description">
             Hello There👋🏾 <br />
@@ -120,20 +122,29 @@
               alt="SASS"
             />
             <img
+              src="https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+              alt="js"
+            />
+            <img
+              src="https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+              alt="react"
+            />
+            <img
+              src="https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
+              alt="node"
+            />
+            <img
               src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white"
               alt="Flutter"
             />
             <img
-              src="https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-              alt=""
+              src="https://img.shields.io/badge/Dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white"
+              alt="Dart"
             />
-            <img
-              src="https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
-              alt=""
-            />
+
             <img
               src="https://img.shields.io/badge/Github-121013?style=for-the-badge&logo=github&logoColor=white"
-              alt=""
+              alt="Git"
             />
             <img
               src="https://img.shields.io/badge/mySQL-%2300000f.svg?style=for-the-badge&logo=mysql&logoColor=white"
@@ -144,6 +155,7 @@
               alt=""
             />
           </div>
+          <hr class="about__hr" />
           <div class="environment">
             <h3 class="about__subtitle">Systems I operate on 🛝</h3>
             <div class="os">
@@ -161,6 +173,7 @@
               />
             </div>
           </div>
+          <hr class="about__hr" />
           <h3 class="about__subtitle">
             My Devices just in case you care to know 🤓
           </h3>
@@ -176,6 +189,98 @@
           </div>
         </div>
       </section>
+
+      <section id="projects" class="section container">
+        <h1 class="">Some Awesome Projects I have worked 👨🏾‍💻</h1>
+
+        <div class="projects">
+          <div class="project__wrapper">
+            <img src="./assets/images/project-4.png" alt="project 1" />
+            <div class="projects__links">
+              <button class="btn">Live Link</button>
+              <button class="btn">Github Link</button>
+            </div>
+          </div>
+          <div class="project__wrapper">
+            <img src="./assets/images/project-4.png" alt="project 1" />
+            <div class="projects__links">
+              <button class="btn">Live Link</button>
+              <button class="btn">Github Link</button>
+            </div>
+          </div>
+          <div class="project__wrapper">
+            <img src="./assets/images/project-4.png" alt="project 1" />
+            <div class="projects__links">
+              <button class="btn">Live Link</button>
+              <button class="btn">Github Link</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <div class="section-1">
+          <h1>📩 Let's Connect:</h1>
+
+          <div class="contact__links">
+            <a href="mailto:ntwalipit@gmail.com">
+              <img
+                src="https://img.shields.io/badge/Mail-red.svg?logo=gmail&logoColor=white"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="contact__links">
+            <a href="https://discord.com/channels/iam-ntwali">
+              <img
+                src="https://img.shields.io/badge/Discord-5865f2.svg?logo=discord&logoColor=white"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="contact__links">
+            <a href="https://linkedin.com/in/Iam-Ntwali">
+              <img
+                src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="section-2">
+            <h1>Have any projects in mind, or Have a suggestion</h1>
+            <p>Feel Free to fill out the form below</p>
+
+            <form action="" class="form__wrapper">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your name*"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="credits">Ntwali</div>
+      </footer>
     </main>
 
     <!-- scripts  -->
