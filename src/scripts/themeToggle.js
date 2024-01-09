@@ -1,7 +1,8 @@
-const toggleTheme = document.querySelectorAll('input[name="theme-toggle__btn"]');
+const toggleTheme = document.querySelector('.theme-toggle');
+console.log(toggleTheme);
 
-toggleTheme.forEach(toggle => {
-  toggle.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-  })
+toggleTheme.addEventListener('click', () => {
+
+  document.body.classList.toggle('light-mode');
+
 })

@@ -38,16 +38,11 @@
       </a>
 
       <!-- theme-toggle__btn -->
-      <div class="right theme-toggle btn">
-        <input
-          type="radio"
-          checked="true"
-          id="dark-theme"
-          name="theme-toggle__btn"
-        />
-        <label for="dark-theme"> 🌚 </label>
-        <input type="radio" id="light-theme" name="theme-toggle__btn" />
-        <label for="light-theme"> ☀️ </label>
+      <div class="right theme-toggle">
+        <span class="material-symbols-outlined"> light_mode </span>
+        <!-- <button id="light_mode">
+          <span class="material-symbols-outlined"> light_mode </span>
+        </button> -->
       </div>
     </header>
     <!-- end header -->
@@ -55,19 +50,50 @@
     <main>
       <section class="hero container">
         <img class="hero__img" src="./assets/me 2.jpg" alt="hero__ img" />
-        <h2 class="hero__subtitle">
-          Hello, <sup>ᴵᴬᴹ⏤</sup> <code>Ntwali P 👋🏾</code>
-        </h2>
+        <h2 class="hero__subtitle"><sup>ᴵᴬᴹ⏤</sup> <code>Ntwali P</code></h2>
+
         <h1 class="hero__title">
           <code>SOFTWARE DEVELOPER 👨🏾‍💻</code>
         </h1>
         <p class="hero__description">
-          A passionate <strong>Software Developer / Tech Enthusiast</strong>
-          <br />
-          specialized in building stunning pixel-perfect interactive
-          websites/applications.
+          I specialize in <strong>Web 🌐 & Mobile 📱</strong> Development
         </p>
         <a href="#" class="hero__btn btn">Reach out</a>
+      </section>
+
+      <section class="tabs section container">
+        <button class="tab-btn active_tab" id="about">
+          <span class="tab-text title">About Me</span>
+        </button>
+
+        <button class="tab-btn" id="projects">
+          <span class="tab-text title">Projects</span>
+        </button>
+
+        <button class="tab-btn" id="contact">
+          <span class="tab-text title">Contact</span>
+        </button>
+      </section>
+      <section id="about" class="active-tab__conta container">
+        <div class="introduction">
+          <p class="about__description">
+            Hello There👋🏾 <br />
+            My name is <strong>Pacifique Ntwali</strong> a
+            <strong>Software Developer 👨🏾‍💻</strong>from Kigali, Rwanda 🇷🇼 I wake
+            up in the morning, grab a cup of coffee ☕, open my laptop 💻 and
+            build things that live on the web all day, everyday 😊. I am
+            self-taught btw 😄.
+          </p>
+          <p class="about__description">
+            People who know me say I'm obsessed, that's fair., i am very driven
+            and love learning new things.
+          </p>
+          <p class="about__description">
+            I'm currently starting my university studies at the
+            <a href="#">University of the People</a> to follow my dreams to
+            learn computer science.
+          </p>
+        </div>
       </section>
     </main>
 

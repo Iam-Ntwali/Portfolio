@@ -21,32 +21,15 @@
 }
 
 .header .theme-toggle {
-  background: var(--clr-dark);
+  background: var(--clr-background);
   border-radius: 8px;
   width: fit-content;
-  display: flex;
   user-select: none;
-  padding: 0;
+  border-radius: 50%;
 }
 
-.header .theme-toggle input[type="radio"] {
-  position: absolute;
-  visibility: hidden;
-  display: none;
-}
-
-.header .theme-toggle input[type="radio"]:checked+label {
-  color: var(--clr-light);
-  background: var(--clr-rose);
-  border-radius: 8px;
-}
-
-.header .theme-toggle label {
-  padding: var(--size-xxs);
-  width: 30px;
-  text-align: center;
-  cursor: pointer;
-  font-size: var(--size-base);
+.theme-toggle span {
+  padding: var(--size-xs);
 }
 
 /* media queries */
