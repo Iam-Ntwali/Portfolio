@@ -53,6 +53,11 @@
   font-size: var(--size-sm);
 }
 
+.hero__links {
+  display: flex;
+  gap: 1rem;
+}
+
 /* Media Queries */
 /* xs */
 @media (min-width: 475px) {

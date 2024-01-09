@@ -1,3 +1,10 @@
+@import url(./components/contact.css);
+@import url(./components/projects.css);
+@import url(./components/about.css);
+@import url(./components/hero.css);
+@import url(./components/header.css);
+@import url(./modern-normalize.css);
+
 :root {
   --clr-background: #070a13;
   --clr-dark: #070a13;
@@ -49,6 +56,7 @@ html {
   --clr-slate800: #1e293b;
 }
 
+/* == DEFAULTS == */
 body {
   font-family: 'General Sans', sans-serif;
   background-color: var(--clr-background);
@@ -82,26 +90,7 @@ strong {
   color: var(--clr-indigo);
 }
 
-/* Utilities */
-/* xs */
-/* @media (min-width: 475px) {} */
-
-/* sm */
-/* @media (min-width: 640px) {} */
-
-/* md */
-/* @media (min-width: 768px) {} */
-
-/* lg */
-/* @media (min-width: 1024px) {} */
-
-/* xl */
-/* @media (min-width: 1280px) {} */
-
-/* 2xl */
-/* @media (min-width: 1536px) {} */
-
-
+/* == REUSABLE COMPONENTS == */
 .btn {
   display: inline-block;
   font-weight: 600;
@@ -184,6 +173,7 @@ strong {
   text-align: center;
 }
 
+/* media queries */
 /* xs */
 @media (min-width: 475px) {
   .container {
@@ -249,3 +239,21 @@ strong {
     border: 2px solid wheat;
   }
 }
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
