@@ -1,4 +1,5 @@
 import('./scripts/themeToggle.js');
+import('./scripts/copyright.js')
 
 // Tabs
 

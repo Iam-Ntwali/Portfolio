@@ -149,6 +149,7 @@ textarea {
 
 .section {
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .tabs {
@@ -194,12 +195,18 @@ textarea {
   display: none;
 }
 
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: var(--size-xl);
+}
+
 /* media queries */
 /* xs */
 @media (min-width: 475px) {
   .container {
     max-width: 475px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
 }
 
@@ -207,7 +214,7 @@ textarea {
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
-    border: 2px solid goldenrod;
+    /* border: 2px solid goldenrod; */
   }
 }
 
@@ -215,7 +222,7 @@ textarea {
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
   }
 
   .tab-btn span {
@@ -227,11 +234,12 @@ textarea {
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
   }
 
   .section {
-    margin-top: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   .tabs {
@@ -247,7 +255,7 @@ textarea {
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
-    border: 2px solid teal;
+    /* border: 2px solid teal; */
   }
 
 
@@ -257,7 +265,7 @@ textarea {
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
-    border: 2px solid wheat;
+    /* border: 2px solid wheat; */
   }
 }
 
