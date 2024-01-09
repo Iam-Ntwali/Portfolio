@@ -58,6 +58,7 @@
 @media (min-width: 1024px) {
   #about {
     flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .about__content {
