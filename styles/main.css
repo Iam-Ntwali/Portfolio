@@ -37,7 +37,9 @@
   --size-10xl: 10rem;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   line-height: calc(1em + .5rem);
 }
@@ -89,6 +91,21 @@ a {
 strong {
   color: var(--clr-indigo);
 }
+
+input,
+textarea {
+  display: inline-block;
+  background: none;
+  border: none;
+  outline: none;
+  font: inherit;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
 
 /* == REUSABLE COMPONENTS == */
 .btn {
