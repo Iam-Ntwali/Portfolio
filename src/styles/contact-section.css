@@ -1,8 +1,8 @@
-#contact {
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
 }
 
@@ -15,7 +15,7 @@
 
 .section-2 p {
   color: var(--clr-slate600);
-  font-size: var(--size-lg);
+  font-size: var(--size-base);
   margin-bottom: 1rem;
 }
 
@@ -25,32 +25,30 @@
   gap: 1rem;
 }
 
+.form__wrapper {
+  margin-bottom: 2rem;
+}
+
 .form__wrapper input:not(input[type="submit"]),
 .form__wrapper textarea {
   background-color: var(--clr-alt);
   margin-bottom: 1rem;
-  font-size: var(--size-lg);
-  border-radius: 10px;
-  padding: 1rem;
+  font-size: var(--size-sm);
+  border-radius: 5px;
+  padding: .8rem;
   color: var(--clr-slate400);
 }
 
-.form__wrapper textarea {
-  background-color: var(--clr-alt);
-  margin-bottom: 1rem;
-  font-size: var(--size-lg);
-  border-radius: 10px;
-  padding: 1rem;
-  color: var(--clr-slate400);
-}
-
+.form__wrapper input:active,
+.form__wrapper textarea:active,
 .form__wrapper input:focus,
 .form__wrapper textarea:focus {
   border: 1px solid var(--clr-indigo);
+  outline: 1px solid var(--clr-indigo);
 }
 
 .form__wrapper input[type='submit'] {
-  font-size: var(--size-lg);
+  font-size: var(--size-base);
 }
 
 /* xs */
@@ -61,15 +59,9 @@
 
 /* md */
 @media (min-width: 768px) {
-  #contact {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
+  .contact {
+    gap: 5rem;
   }
-}
-
-/* lg */
-@media (min-width: 1024px) {
 
   .section-1 h1,
   .section-2 h1 {
@@ -77,7 +69,26 @@
   }
 
   .section-2 p {
-    font-size: var(--size-xl);
+    font-size: var(--size-lg);
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .contact {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .section-1 {
+    order: 2;
+    flex: 1;
+  }
+
+  .section-2 {
+    order: 1;
+    flex: 1;
   }
 }
 
@@ -85,14 +96,4 @@
 /* @media (min-width: 1280px) {} */
 
 /* 2xl */
-@media (min-width: 1536px) {
-
-  .section-1 h1,
-  .section-2 h1 {
-    font-size: var(--size-3xl);
-  }
-
-  .section-2 p {
-    font-size: var(--size-2xl);
-  }
-}
+/* @media (min-width: 1536px) {} */

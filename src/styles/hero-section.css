@@ -15,9 +15,9 @@
 }
 
 .hero__subtitle {
-  background-color: #4e46e533;
-  color: var(--clr-slate800);
-  font-size: var(--size-base);
+  background-color: var(--clr-alt);
+  color: var(--clr-slate400);
+  font-size: var(--size-3xl);
   line-height: 0.9;
   padding: var(--size-sm);
   border-radius: var(--size-sm);
@@ -31,7 +31,7 @@
 .hero__title {
   color: var(--clr-slate400);
   text-transform: uppercase;
-  font-size: var(--size-2xl);
+  font-size: var(--size-xl);
   letter-spacing: -0.05em;
   line-height: 0.9;
 }
@@ -42,15 +42,9 @@
   color: var(--clr-slate600);
 }
 
-.hero-btn {
-  display: flex;
-  flex-direction: row;
-  gap: var(--size-lg);
-}
-
-.hero__btn {
-  text-transform: capitalize;
-  font-size: var(--size-sm);
+.hero__description strong {
+  font-size: var(--size-base);
+  font-weight: 700;
 }
 
 .hero__links {
@@ -58,31 +52,8 @@
   gap: 1rem;
 }
 
-/* Media Queries */
 /* xs */
-@media (min-width: 475px) {
-  .hero {
-    gap: 1.5rem;
-  }
-
-  .hero__subtitle {
-    font-size: var(--size-lg);
-  }
-
-  .hero__subtitle code {
-    font-size: var(--size-4xl);
-  }
-
-  .hero__description {
-    font-size: var(--size-base);
-  }
-
-  .hero__btn {
-    font-size: var(--size-base);
-  }
-}
-
-
+/* @media (min-width: 475px) {} */
 
 /* sm */
 /* @media (min-width: 640px) {} */
@@ -92,48 +63,29 @@
 
 /* lg */
 @media (min-width: 1024px) {
-  .hero__img {
-    width: 12rem;
-    height: 12rem;
-  }
-
   .hero__subtitle {
-    font-size: var(--size-2xl);
-  }
-
-  .hero__subtitle code {
-    font-size: var(--size-5xl);
-  }
-
-  .hero__title {
     font-size: var(--size-4xl);
   }
 
-  .hero__description {
-    font-size: var(--size-lg);
+  .hero__title {
+    font-size: var(--size-2xl);
   }
 
-  .hero__btn {
+  .hero__description {
+    max-width: 60ch;
+    font-size: var(--size-base);
+  }
+
+  .hero__description strong {
     font-size: var(--size-lg);
   }
 }
 
 /* xl */
 @media (min-width: 1280px) {
-  .hero {
-    gap: 2rem;
-  }
-
-  .hero__subtitle {
-    font-size: var(--size-4xl);
-  }
-
-  .hero__description {
-    font-size: var(--size-xl);
-  }
-
-  .hero__btn {
-    font-size: var(--size-xl);
+  .hero__img {
+    width: 10rem;
+    height: 10rem;
   }
 }
 
