@@ -70,9 +70,9 @@
 
 /* xl */
 @media (min-width: 1280px) {
-  .tab-btn span {
+  /* .tab-btn span {
     font-size: var(--size-xl);
-  }
+  } */
 }
 
 /* 2xl */
