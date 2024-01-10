@@ -17,13 +17,13 @@
   font-weight: 600;
   text-align: center;
   letter-spacing: -0.05em;
-  background-color: #f5f5f585;
+  background-color: var(--clr-dark);
   padding: 1em;
   transition: transform .3s, box-shadow .3s;
 }
 
 .tab-btn:hover {
-  background-color: var(--clr-indigo);
+  border: 3px solid var(--clr-indigo);
 }
 
 .tab-btn span {
@@ -35,8 +35,8 @@
 }
 
 .active_tab {
-  background-color: var(--clr-indigo);
-  text-align: center;
+  border: 3px solid var(--clr-indigo);
+  background-color: #8e89eb;
 }
 
 
