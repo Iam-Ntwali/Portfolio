@@ -14,12 +14,11 @@
   width: 100%;
   border-radius: 5px;
   display: inline-block;
-  font-weight: 600;
   text-align: center;
   letter-spacing: -0.05em;
   background-color: var(--clr-dark);
-  padding: 1em;
-  transition: transform .3s, box-shadow .3s;
+  padding: 1rem;
+  transition: border .3s;
 }
 
 .tab-btn:hover {

@@ -67,10 +67,6 @@
   .section-2 h1 {
     font-size: var(--size-2xl);
   }
-
-  .section-2 p {
-    font-size: var(--size-lg);
-  }
 }
 
 /* lg */
@@ -78,6 +74,7 @@
   .contact {
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
     gap: 3rem;
   }
 
