@@ -16,3 +16,10 @@ My portfolio repository. 🚀
   src="https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
   alt="js"
 />
+
+### Hosted on:
+
+👉 <img
+      src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
+      alt="Netlify"
+    />
