@@ -9,8 +9,8 @@
 
 /* custom font */
 @font-face {
-  font-family: 'Monolisa';
-  src: url('../assets/fonts/MonoLisaVariableNormal.ttf'),
+  font-family: "Monolisa";
+  src: url("../assets/fonts/MonoLisaVariableNormal.ttf");
 }
 
 :root {
@@ -28,9 +28,9 @@
   /* indigo rgb(79, 70, 229) */
 
   /* sizes */
-  --size-xxs: .5rem;
-  --size-xs: .75rem;
-  --size-sm: .85rem;
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.85rem;
   --size-base: 1rem;
   --size-lg: 1.25rem;
   --size-xl: 1.5rem;
@@ -46,14 +46,14 @@
 
   /* fonts */
   --main-font: Monolisa;
-  --alt-font: 'Cabinet Grotesk', sans-serif;
+  --alt-font: "Cabinet Grotesk", sans-serif;
 }
 
 *,
 *::before,
 *::after {
   margin: 0;
-  line-height: calc(1em + .5rem);
+  line-height: calc(1em + 0.5rem);
 }
 
 html {
@@ -159,27 +159,25 @@ footer a {
   letter-spacing: -0.05em;
   background-color: var(--clr-rose);
   color: #f1f5f9;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   border-radius: 6px;
   box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5),
-    0 6px 6px rgba(225, 29, 72, 0.5),
-    0 0 100px -10px var(--clr-rose);
-  transition: transform .3s, box-shadow .3s;
+    0 6px 6px rgba(225, 29, 72, 0.5), 0 0 100px -10px var(--clr-rose);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 14px 28px rgba(225, 29, 72, 0.25),
-    0 10px 10px rgba(225, 29, 72, 0.22),
-    0 0 120px -10px var(--clr-rose);
+    0 10px 10px rgba(225, 29, 72, 0.22), 0 0 120px -10px var(--clr-rose);
 }
 
 .container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   /* border: 2px solid green; */
 }
 
@@ -189,7 +187,7 @@ footer a {
 }
 
 .square::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -15px;
   left: -10px;
@@ -199,11 +197,9 @@ footer a {
   background-color: var(--clr-rose);
 }
 
-
-
 .line::before {
-  content: '';
-  border-bottom: 5px solid var(--clr-rose);
+  content: "";
+  border-bottom: 2px solid var(--clr-rose);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -242,7 +238,6 @@ footer a {
     max-width: 768px;
     /* border: 2px solid orange; */
   }
-
 }
 
 /* lg */
@@ -264,8 +259,6 @@ footer a {
     max-width: 1280px;
     /* border: 2px solid teal; */
   }
-
-
 }
 
 /* 2xl */
