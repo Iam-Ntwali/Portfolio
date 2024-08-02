@@ -2,37 +2,28 @@
   padding: 2rem;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 #theme-toggle__btn {
-  font-size: var(--size-sm);
-  background-color: var(--clr-indigo);
-  border-radius: 10px;
+  font-size: var(--size-lg);
+  border-radius: 50%;
   display: block;
-  padding: .5rem;
+  padding: 1rem;
   text-align: center;
   user-select: none;
   font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* xs */
-/* @media (min-width: 475px) {} */
+#theme-toggle__btn:hover {
+  transform: scale(1.1);
+}
 
-/* sm */
-/* @media (min-width: 640px) {} */
-
-/* md */
-/* @media (min-width: 768px) {} */
-
-/* lg */
+/* Adjustments for different screen sizes */
 @media (min-width: 1024px) {
   #theme-toggle__btn {
-    padding: .7rem;
+    padding: 1rem;
   }
 }
-
-/* xl */
-/* @media (min-width: 1280px) {} */
-
-/* 2xl */
-/* @media (min-width: 1536px) {} */

@@ -1,8 +1,35 @@
-import('./scripts/themeToggle.js');
 import('./scripts/copyright.js')
 
-// Tabs
+// THEME SWITCHER
+// Theme Switcher Logic
+const toggleTheme = document.querySelector('#theme-toggle__btn');
 
+// Check if a theme is stored in localStorage
+const currentTheme = localStorage.getItem('theme');
+
+// Apply the stored theme if it exists
+if (currentTheme) {
+  document.body.classList.add(currentTheme);
+  toggleTheme.textContent = currentTheme === 'light-mode' ? '🌑' : '☀';
+}
+
+// Function to handle theme toggle
+const handleThemeToggle = () => {
+  const isLightMode = document.body.classList.toggle('light-mode');
+
+  if (isLightMode) {
+    localStorage.setItem('theme', 'light-mode');
+    toggleTheme.textContent = '🌑';  // Change icon to moon for light mode
+  } else {
+    localStorage.removeItem('theme');
+    toggleTheme.textContent = '☀';  // Change icon to sun for dark mode
+  }
+};
+
+// Add event listener to the toggle button
+toggleTheme.addEventListener('click', handleThemeToggle);
+
+// TABS
 // Debounce function to improve performance
 function debounce(func, wait = 10, immediate = true) {
   let timeout;
@@ -34,7 +61,6 @@ tabsButtons.forEach(tabBtn => {
 
 
 const sections = document.querySelectorAll('.section');
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
