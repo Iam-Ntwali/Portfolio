@@ -38,12 +38,18 @@
     <main>
       <!-- hero section -->
       <section class="hero container">
-        <img
-          class="hero__img square"
-          src="./assets/images/me.jpg"
-          alt="profile picture"
-          loading="lazy"
-        />
+        <div class="hero-wrapper">
+          <img
+            class="hero__img square"
+            src="./assets/images/me.jpg"
+            alt="profile picture"
+            loading="lazy"
+          />
+
+          <button class="btn box">
+            <a href="">📢 Available for work</a>
+          <button>
+        </div>
         <h2 class="hero__subtitle"><sup>ᴵᴬᴹ⏤</sup> <code>Ntwali</code></h2>
 
         <h1 class="hero__title square">SOFTWARE DEVELOPER 👨🏾‍💻</h1>
@@ -66,7 +72,7 @@
           </a>
           <a href="mailto:ntwalipit@gmail.com" target="_blank">
             <img
-              src="https://img.shields.io/badge/Mail-red.svg?logo=gmail&logoColor=white"
+              src="https://img.shields.io/badge/Email-red.svg?logo=gmail&logoColor=white"
               alt="email badge"
             />
           </a>
@@ -158,10 +164,10 @@
                 src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white"
                 alt="react"
               />
-              <!-- <img
+              <img
                 src="https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
                 alt="node"
-              /> -->
+              />
               <img
                 src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white"
                 alt="Flutter"
@@ -180,6 +186,7 @@
                 src="https://img.shields.io/badge/Github-121013?style=for-the-badge&logo=github&logoColor=white"
                 alt="Github"
               />
+              <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
               <img
                 src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
                 alt="Netlify"
@@ -192,15 +199,17 @@
                 src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"
                 alt="Supabase"
               />
+              <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
+              alt="MongoDB" />
             </div>
 
             <hr class="about__hr" />
 
             <div class="environment">
-              <h3 class="about__subtitle square">Systems I operate on 🛝</h3>
+              <h3 class="about__subtitle square">Operating Systems 🛝</h3>
               <div class="os">
                 <img
-                  src="https://img.shields.io/badge/Nobara-294172?style=for-the-badge&logo=fedora&logoColor=white"
+                  src="https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white"
                   alt="Fedora"
                 />
                 <img
@@ -208,7 +217,7 @@
                   alt="Android Badge"
                 />
                 <img
-                  src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"
+                  src="https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white"
                   alt="Windows Badge"
                 />
               </div>
@@ -341,9 +350,9 @@
             <p>Feel Free to fill out the form below:</p>
 
             <form
-              action="https://formspree.io/f/mrgnbggr"
               method="POST"
               class="form__wrapper"
+              netlify
             >
               <input
                 type="text"

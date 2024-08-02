@@ -1,9 +1,10 @@
 /* css components import */
+@import url(./styles/hero-section.css);
+@import url(./styles/animated-btn.css);
 @import url(./styles/contact-section.css);
 @import url(./styles/projects-section.css);
 @import url(./styles/about-section.css);
 @import url(./styles/tabs.css);
-@import url(./styles/hero-section.css);
 @import url(./styles/header.css);
 @import url(./styles/modern-normalize.css);
 
@@ -119,6 +120,7 @@ h4,
 h5,
 h6 {
   font-family: var(--alt-font-1);
+  font-weight: 900;
 }
 
 button {
@@ -132,6 +134,9 @@ button {
 
 a {
   color: var(--clr-rose);
+  letter-spacing: -.10px;
+  font-family: var(--italic-font);
+  font-weight: 900;
 }
 
 strong {
@@ -233,6 +238,14 @@ footer a {
 
 .hidden {
   display: none;
+}
+
+.hero-wrapper {
+  position: relative;
+}
+
+.box a {
+  text-decoration: none;
 }
 
 /* media queries */

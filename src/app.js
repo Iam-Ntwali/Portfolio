@@ -3,25 +3,35 @@ import('./scripts/copyright.js')
 
 // Tabs
 
+// Debounce function to improve performance
+function debounce(func, wait = 10, immediate = true) {
+  let timeout;
+  return function () {
+    const context = this, args = arguments;
+    const later = function () {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    const callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+}
+
 const tabsButtons = document.querySelectorAll('.tab-btn');
 const tabsContent = document.querySelectorAll('.tab-content');
 
 tabsButtons.forEach(tabBtn => {
-  tabBtn.addEventListener('click', () => {
-    // Remove 'active_tab' class from all buttons
+  tabBtn.addEventListener('click', debounce(() => {
     tabsButtons.forEach(btn => btn.classList.remove('active_tab'));
-
-    // Add 'active_tab' class to the clicked button
     tabBtn.classList.add('active_tab');
-
-    // Hide all tab contents
     tabsContent.forEach(content => content.classList.add('hidden'));
-
-    // Show the corresponding tab content
     const tabId = tabBtn.id + 'Section';
     document.getElementById(tabId).classList.remove('hidden');
-  });
+  }));
 });
+
 
 const sections = document.querySelectorAll('.section');
 
