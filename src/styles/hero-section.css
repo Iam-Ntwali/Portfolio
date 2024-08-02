@@ -1,3 +1,4 @@
+/* General Hero Section Styles */
 .hero {
   text-align: center;
   display: flex;
@@ -6,12 +7,16 @@
   align-items: center;
   gap: 2rem;
   margin-top: 2rem;
+  padding: 2rem;
 }
 
 .hero__img {
+  position: relative;
   border-radius: 50%;
   width: 8rem;
   height: 8rem;
+  border: 2px solid var(--clr-indigo);
+  z-index: 999;
 }
 
 .hero__subtitle {
@@ -20,11 +25,6 @@
   line-height: 0.9;
   padding: var(--size-sm);
   border-radius: var(--size-sm);
-}
-
-.hero__subtitle code {
-  color: var(--clr-indigo);
-  font-size: var(--size-3xl);
 }
 
 .hero__title {
@@ -41,26 +41,57 @@
   color: var(--clr-slate600);
 }
 
-.hero__description strong {
-  font-size: var(--size-base);
-  font-weight: 700;
-}
-
 .hero__links {
   display: flex;
   gap: 1rem;
 }
 
-/* xs */
-/* @media (min-width: 475px) {} */
+.hero-wrapper {
+  position: relative;
+}
 
-/* sm */
-/* @media (min-width: 640px) {} */
+/* Box Button Styles */
+.box {
+  position: absolute;
+  bottom: -10%;
+  left: -80%;
+  z-index: 1;
+  /* z-index: -1; */
+  display: flex;
+  align-items: center;
+  background-color: none;
+  outline: 2px solid var(--clr-indigo);
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+}
 
-/* md */
-/* @media (min-width: 768px) {} */
+.box a {
+  color: var(--clr-indigo);
+  font-family: var(--alt-font);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: var(--size-sm);
+  transition: all 0.3s ease;
+}
 
-/* lg */
+.box a:hover {
+  transform: scale(1.05);
+  color: var(--clr-slate400);
+}
+
+.box:hover {
+  background-color: var(--clr-rose);
+}
+
+/* Image Icon in the Button */
+.box img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Responsive Adjustments */
 @media (min-width: 1024px) {
   .hero__subtitle {
     font-size: var(--size-4xl);
@@ -71,22 +102,17 @@
   }
 
   .hero__description {
-    max-width: 60ch;
     font-size: var(--size-base);
   }
 
-  .hero__description strong {
-    font-size: var(--size-lg);
+  .box {
+    padding: 0.7rem 1.5rem;
   }
 }
 
-/* xl */
 @media (min-width: 1280px) {
   .hero__img {
     width: 10rem;
     height: 10rem;
   }
 }
-
-/* 2xl */
-/* @media (min-width: 1536px) {} */
