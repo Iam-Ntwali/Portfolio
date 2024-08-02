@@ -10,7 +10,20 @@
 /* custom font */
 @font-face {
   font-family: "Monolisa";
-  src: url("../assets/fonts/MonoLisaVariableNormal.ttf");
+  src: url("../assets/fonts/MonoLisa-Variable-2.012/MonoLisaVariableNormal.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Operator";
+  src: url("../assets/fonts/OperatorMono/OperatorMonoLig-Book.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dank";
+  src: url("../assets/fonts/Dank-Mono-Font-main/DankMono-Italic.ttf");
+  font-display: swap;
 }
 
 :root {
@@ -47,6 +60,8 @@
   /* fonts */
   --main-font: Monolisa;
   --alt-font: "Cabinet Grotesk", sans-serif;
+  --alt-font-1: Operator;
+  --italic-font: Dank;
 }
 
 *,
@@ -74,6 +89,7 @@ body {
   font-family: var(--main-font), sans-serif;
   background-color: var(--clr-background);
   color: var(--clr-light);
+  letter-spacing: -.8px;
 }
 
 img,
@@ -102,7 +118,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--alt-font);
+  font-family: var(--alt-font-1);
 }
 
 button {
@@ -184,6 +200,14 @@ footer a {
 .section {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.section--visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .square::before {

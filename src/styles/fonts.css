@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Operator Mono';
+  src: url(../../assets/fonts/OperatorMono/OperatorMonoLig-Book.otf);
+}
+
+@font-face {
+  font-family: 'Operator Mono Light';
+  src: url(../../assets/fonts/OperatorMono/OperatorMonoLig-Light.otf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'DankMono';
+  src: url(../../assets/fonts/Dank-Mono-Font-main/DankMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'DankMono Italic';
+  src: url(../../assets/fonts/Dank-Mono-Font-main/DankMono-Italic.ttf);
+}
+
+@font-face {
+  font-family: 'Monolisa';
+  src: url(../../assets/fonts/MonoLisa-Variable-2.012/MonoLisaVariableNormal.ttf);
+}
