@@ -5,25 +5,71 @@
   align-items: center;
 }
 
-#theme-toggle__btn {
-  font-size: var(--size-lg);
-  border-radius: 50%;
-  display: block;
-  padding: 1rem;
-  text-align: center;
-  user-select: none;
-  font-weight: bold;
+/* The switch - the outer container */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide the default checkbox */
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--clr-slate800);
+  transition: 0.4s;
+  border-radius: 34px;
 }
 
-#theme-toggle__btn:hover {
-  transform: scale(1.1);
+/* The round part of the slider */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--clr-light);
+  transition: 0.4s;
+  border-radius: 50%;
 }
 
-/* Adjustments for different screen sizes */
-@media (min-width: 1024px) {
-  #theme-toggle__btn {
-    padding: 1rem;
-  }
+/* When the checkbox is checked, move the slider */
+input:checked+.slider {
+  background-color: var(--clr-slate400);
+}
+
+/* Move the round slider when checked */
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+/* Adding the sun and moon icons */
+.slider::after {
+  content: "☀️";
+  color: var(--clr-light);
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 1rem;
+}
+
+input:checked+.slider::after {
+  content: "🌙";
+  color: var(--clr-light);
+  right: 10px;
+  left: auto;
 }

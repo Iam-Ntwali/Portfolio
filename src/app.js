@@ -1,33 +1,27 @@
 import('./scripts/copyright.js')
 
 // THEME SWITCHER
-// Theme Switcher Logic
-const toggleTheme = document.querySelector('#theme-toggle__btn');
+const checkbox = document.querySelector('#checkbox');
 
-// Check if a theme is stored in localStorage
+// Load the theme from localStorage
 const currentTheme = localStorage.getItem('theme');
 
-// Apply the stored theme if it exists
+// Apply the saved theme
 if (currentTheme) {
   document.body.classList.add(currentTheme);
-  toggleTheme.textContent = currentTheme === 'light-mode' ? '🌑' : '☀';
+  checkbox.checked = currentTheme === 'light-mode';
 }
 
-// Function to handle theme toggle
-const handleThemeToggle = () => {
-  const isLightMode = document.body.classList.toggle('light-mode');
-
-  if (isLightMode) {
+// Listen for changes on the checkbox
+checkbox.addEventListener('change', () => {
+  if (checkbox.checked) {
+    document.body.classList.add('light-mode');
     localStorage.setItem('theme', 'light-mode');
-    toggleTheme.textContent = '🌑';  // Change icon to moon for light mode
   } else {
+    document.body.classList.remove('light-mode');
     localStorage.removeItem('theme');
-    toggleTheme.textContent = '☀';  // Change icon to sun for dark mode
   }
-};
-
-// Add event listener to the toggle button
-toggleTheme.addEventListener('click', handleThemeToggle);
+});
 
 // TABS
 // Debounce function to improve performance
