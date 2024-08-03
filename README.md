@@ -49,29 +49,28 @@ To run this project locally, follow these simple steps:
    ```
 2. **Navigate to the project directory:**
 
-```bash
-cd your-repo-name
-```
-3. Open the index.html file in your browser:
+   ```bash
+   cd your-repo-name
+   ```
+3. **Open the index.html file in your browser:**
 
-```bash
-open index.html
-```
+   ```bash
+   open index.html
+   ```
 Alternatively, you can double-click the index.html file to open it in your default web browser.
 
 ## Usage
-- Browse the Portfolio: Navigate through the About Me, Projects, and Contact sections.
-- Explore Projects: Visit the Projects section to view some of my work, with live links and GitHub repositories provided.
-- Contact Me: Use the contact form to get in touch or connect via the provided social media links.
+  - Browse the Portfolio: Navigate through the About Me, Projects, and Contact sections.
+  - Explore Projects: Visit the Projects section to view some of my work, with live links and GitHub repositories provided.
+  - Contact Me: Use the contact form to get in touch or connect via the provided social media links.
 
 ## Contributing
 If you'd like to contribute to this project:
-
-## Fork the repository.
-Create a new branch (git checkout -b feature/your-feature).
-1. Make your changes and commit them (git commit -m 'Add some feature').
-2. Push to the branch (git push origin feature/your-feature).
-3. Open a Pull Request.
+  1. Fork the repository.
+  2. Create a new branch (git checkout -b feature/your-feature).
+  3. Make your changes and commit them (git commit -m 'Add some feature').
+  4. Push to the branch (git push origin feature/your-feature).
+  5. Open a Pull Request.
 
 ## License
 This project is open-source and available under the MIT License.
@@ -82,6 +81,8 @@ Feel free to reach out if you have any questions or suggestions:
 - Email: ntwalipit@gmail.com
 - LinkedIn: Iam-Ntwali
 - GitHub: Iam-Ntwali
+
+<hr/>
 
 Made with ❤️ by Pacifique Ntwali.
 
