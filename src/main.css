@@ -160,16 +160,48 @@ textarea {
   resize: none;
 }
 
+/* Footer Styling */
 footer {
   text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: var(--size-sm);
+  padding: 1rem;
+  color: var(--clr-indigo);
+  font-weight: bold;
+  font-size: var(--size-base);
+  font-family: var(--alt-font-1);
+  border-top: 2px solid var(--clr-slate600);
 }
 
-footer a {
+footer .credits {
+  margin: 0;
+  line-height: 1.5;
+}
+
+footer .credits a {
+  color: var(--clr-rose);
   text-decoration: none;
-  border-bottom: 2px solid var(--clr-rose);
+  font-family: var(--italic-font);
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+footer .credits a:hover {
+  border-bottom: 1px solid var(--clr-rose);
+}
+
+footer .credits sup {
+  font-family: var(--alt-font);
+  font-weight: 400;
+}
+
+#currentYear {
+  font-family: var(--alt-font);
+  font-weight: 400;
+}
+
+/* Add padding or margin to separate footer from the content above if needed */
+footer {
+  margin-top: 3rem;
 }
 
 /* == REUSABLE COMPONENTS == */
