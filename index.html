@@ -11,7 +11,7 @@
     <!-- favicons -->
     <link
       rel="shortcut icon"
-      href="./assets/images/coding.png"
+      href="./assets/images/me.jpg"
       type="image/x-icon"
     />
 
@@ -30,8 +30,8 @@
   <body>
     <!-- header starts here -->
     <header class="header container">
-      <label class="theme-switch" for="checkbox">
-        <input type="checkbox" id="checkbox" />
+      <label class="theme-switch" for="checkbox" title="Theme-switch">
+        <input type="checkbox" id="checkbox"/>
         <div class="slider round"></div>
       </label>
     </header>
@@ -208,82 +208,73 @@
           </div>
         </div>
       </section>
-
       <!-- Projects section -->
 
       <!-- Contact section ends here -->
       <section id="contactSection" class="section container tab-content hidden">
-        <div class="contact">
-          <div class="section-1">
-            <h1 class="square">Let's Connect:</h1>
+  <div class="contact">
+    <div class="section-1">
+      <h1 class="square">Let's Connect:</h1>
 
-            <div class="contact__links">
-              <a href="https://github.com/Iam-Ntwali" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/Github-121013?style=for-the-badge&logo=github&logoColor=white"
-                  alt="github"
-                />
-              </a>
+      <div class="contact__links">
+        <a href="https://github.com/Iam-Ntwali" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Github-121013?style=for-the-badge&logo=github&logoColor=white"
+            alt="github"
+          />
+        </a>
 
-              <!-- <a href="mailto:ntwalipit@gmail.com" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/Gmail-red.svg?style=for-the-badge&logo=gmail&logoColor=white"
-                  alt=""
-                />
-              </a> -->
+        <a href="https://linkedin.com/in/Iam-Ntwali" target="_blank">
+          <img
+            src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"
+            alt="linkedin"
+          />
+        </a>
 
-              <a href="https://linkedin.com/in/Iam-Ntwali" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"
-                  alt="linkedin"
-                />
-              </a>
+        <a href="https://discord.com/channels/iam-ntwali" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Discord-5865f2.svg?style=for-the-badge&logo=discord&logoColor=white"
+            alt="discord"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="section-2">
+      <h1 class="square">
+        Have any projects in mind,<br />
+        or Have a suggestion
+      </h1>
+      <p>Feel Free to fill out the form below:</p>
 
-              <a href="https://discord.com/channels/iam-ntwali" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/Discord-5865f2.svg?style=for-the-badge&logo=discord&logoColor=white"
-                  alt=""
-                />
-              </a>
-            </div>
-          </div>
-          <div class="section-2">
-            <h1 class="square">
-              Have any projects in mind,<br />
-              or Have a suggestion
-            </h1>
-            <p>Feel Free to fill out the form below:</p>
+      <form class="form__wrapper" netlify>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Your Name* (required)"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your Email* (required)"
+          required
+        />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Your Message* (required)"
+          required
+        ></textarea>
+        <input type="submit" class="btn" />
+      </form>
+    </div>
+  </div>
+</section>
 
-            <form
-              class="form__wrapper"
-              netlify
-            >
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Your Name* (required)"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Your Email* (required)"
-                required
-              />
-              <textarea
-                name="message"
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Your Message* (required)"
-              ></textarea>
-              <input type="submit" class="btn" />
-            </form>
-          </div>
-        </div>
-      </section>
       <!-- Contact section -->
     </main>
     <!-- main end here-->

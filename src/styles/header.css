@@ -3,6 +3,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
 }
 
 /* The switch - the outer container */
@@ -11,6 +12,11 @@
   display: inline-block;
   width: 60px;
   height: 34px;
+  position: fixed;
+    max-width: 100%;
+    margin: auto;
+    top: 2%;
+    z-index: 111111;
 }
 
 /* Hide the default checkbox */
@@ -41,14 +47,13 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: var(--clr-light);
   transition: 0.4s;
   border-radius: 50%;
 }
 
 /* When the checkbox is checked, move the slider */
 input:checked+.slider {
-  background-color: var(--clr-slate400);
+  background-color: var(--clr-slate800);
 }
 
 /* Move the round slider when checked */
@@ -59,7 +64,6 @@ input:checked+.slider:before {
 /* Adding the sun and moon icons */
 .slider::after {
   content: "☀️";
-  color: var(--clr-light);
   position: absolute;
   top: 50%;
   left: 10px;
@@ -69,7 +73,6 @@ input:checked+.slider:before {
 
 input:checked+.slider::after {
   content: "🌙";
-  color: var(--clr-light);
   right: 10px;
   left: auto;
 }

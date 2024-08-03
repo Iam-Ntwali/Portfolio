@@ -91,6 +91,7 @@ body {
   background-color: var(--clr-background);
   color: var(--clr-light);
   letter-spacing: -.8px;
+  position: relative;
 }
 
 img,
@@ -200,6 +201,7 @@ footer a {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   /* border: 2px solid green; */
+  position: relative;
 }
 
 .section {
