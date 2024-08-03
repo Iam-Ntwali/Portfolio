@@ -53,22 +53,19 @@
 /* Box Button Styles */
 .box {
   position: absolute;
-  bottom: -10%;
-  left: -80%;
+  bottom: 2%;
+  right: -90%;
   z-index: 1;
-  /* z-index: -1; */
-  display: flex;
-  align-items: center;
-  background-color: none;
+  background-color: var(--clr-indigo);
   outline: 2px solid var(--clr-indigo);
-  padding: 0.5rem;
-  border-radius: 5px;
+
+  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.5s ease;
 }
 
 .box a {
-  color: var(--clr-indigo);
+  color: #fff;
   font-family: var(--alt-font);
   text-decoration: none;
   font-weight: 900;
@@ -78,17 +75,11 @@
 
 .box a:hover {
   transform: scale(1.05);
-  color: var(--clr-slate400);
 }
 
 .box:hover {
   background-color: var(--clr-rose);
-}
-
-/* Image Icon in the Button */
-.box img {
-  width: 1.5rem;
-  height: 1.5rem;
+  outline: 2px solid var(--clr-rose);
 }
 
 /* Responsive Adjustments */
