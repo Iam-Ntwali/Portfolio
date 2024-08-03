@@ -1,3 +1,4 @@
+/* Title Styling */
 #projectsSection .title {
   font-size: var(--size-lg);
   color: var(--clr-slate400);
@@ -6,9 +7,9 @@
   justify-content: center;
   align-items: center;
   width: max-content;
-  align-content: center;
 }
 
+/* Projects Grid Layout */
 .projects {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -16,9 +17,10 @@
   gap: 1rem;
 }
 
+/* Individual Project Wrapper */
 .project__wrapper {
   background-color: var(--clr-alt);
-  padding: .5rem;
+  padding: 1rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -26,51 +28,53 @@
   align-items: center;
   gap: 1rem;
   width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project__wrapper img {
   border-radius: 10px;
   width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project__wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project__wrapper img:hover {
+  transform: scale(1.05);
+}
+
+/* Project Links */
+.projects__links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .projects__links button {
-  margin-right: 1rem;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-/* xs */
-/* @media (min-width: 475px) {} */
-
-/* sm */
-/* @media (min-width: 640px) {} */
-
-/* md */
+/* Media Queries */
 @media (min-width: 768px) {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .projects__links button {
-    margin-right: 1rem;
+    .projects__links button {
     font-size: var(--size-base);
   }
 }
 
-/* lg */
 @media (min-width: 1024px) {
   #projectsSection .title {
     font-size: var(--size-xl);
-    margin-bottom: 2rem;
   }
 
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-/* xl */
-/* @media (min-width: 1280px) {} */
-
-/* 2xl */
-/* @media (min-width: 1536px) {} */

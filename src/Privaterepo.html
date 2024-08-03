@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Private Repository Access - Contact Pacifique Ntwali for access to this project.">
+    <title>Private Repository Access</title>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./main.css">
+
+    <!-- Js -->
+    <script src="./app.js" defer></script>
+</head>
+<style>
+  /* Styling for Private Repo Page */
+.private-repo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: var(--clr-background);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.private-repo__title {
+    font-size: var(--size-3xl);
+    color: var(--clr-rose);
+    font-family: var(--alt-font-1);
+    margin-bottom: 1rem;
+}
+
+.private-repo__message {
+    max-width: 50ch;
+    font-size: var(--size-lg);
+    color: var(--clr-slate400);
+    margin-bottom: 2rem;
+}
+
+.private-repo__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.private-repo__contact a {
+    margin-bottom: 0.5rem;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+    .private-repo__contact {
+        flex-direction: row;
+    }
+
+    .private-repo__contact a {
+        margin-bottom: 0;
+    }
+}
+
+</style>
+<body>
+  <header class="header container">
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </header>
+    <section class="private-repo container">
+        <h1 class="private-repo__title">⚠ Private Repository ⚠️</h1>
+        <p class="private-repo__message">
+            The repository you are trying to access is private. If you would like access, please contact me directly.
+        </p>
+        <div class="private-repo__contact">
+            <p>You can reach me via:</p>
+             <a href="mailto:ntwalipit@gmail.com" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Gmail-red.svg?style=for-the-badge&logo=gmail&logoColor=white"
+                  alt="gmail"
+                />
+              </a>
+              or
+              <a href="https://linkedin.com/in/Iam-Ntwali" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"
+                  alt="linkedin"
+                />
+              </a>
+        </div>
+        <a href="../index.html" class="btn">Go Back to Home</a>
+    </section>
+</body>
+</html>
