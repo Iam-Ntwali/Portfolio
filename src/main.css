@@ -205,6 +205,7 @@ footer a {
 .section {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  padding: 1rem 2rem;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.3s ease-out, transform 0.3s ease-out;
@@ -287,6 +288,7 @@ footer a {
   .section {
     margin-top: 3rem;
     margin-bottom: 3rem;
+    padding: 1rem 3rem;
   }
 }
 

@@ -1,28 +1,33 @@
 .tabs {
-  background-color: var(--clr-alt);
+  /* background-color: var(--clr-alt); */
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  /* height: var(--size-6xl); */
   padding: 1rem;
   border-radius: 5px;
   gap: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .tab-btn {
   width: 100%;
+  max-width: 150px;
+    /* Limit the width of each tab */
   border-radius: 5px;
   display: inline-block;
   text-align: center;
   letter-spacing: -0.05em;
   background-color: var(--clr-dark);
   padding: 1rem;
-  transition: border .3s;
+  transition: border 0.3s, transform 0.3s;
+    cursor: pointer;
 }
 
 .tab-btn:hover {
   border: 3px solid var(--clr-indigo);
+  transform: scale(1.05);
+    /* Slightly enlarge the tab on hover */
 }
 
 .tab-btn span {
@@ -38,41 +43,33 @@
   background-color: #8e89eb;
 }
 
-
-/* xs */
 @media (min-width: 475px) {
   .tab-btn span {
     font-size: var(--size-sm);
   }
 }
 
-/* sm */
 @media (min-width: 640px) {
   .tab-btn span {
     font-size: var(--size-base);
   }
 }
 
-/* md */
 @media (min-width: 768px) {
   .tab-btn span {
-    font-size: var(--size-lg);
+    font-size: var(--size-base);
   }
 }
 
-/* lg */
 @media (min-width: 1024px) {
   .tabs {
     gap: 2rem;
   }
 }
 
-/* xl */
 @media (min-width: 1280px) {
-  /* .tab-btn span {
-    font-size: var(--size-xl);
-  } */
+  .tab-btn {
+      max-width: 200px;
+      /* Increase width for larger screens */
+    }
 }
-
-/* 2xl */
-/* @media (min-width: 1536px) {} */

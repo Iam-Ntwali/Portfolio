@@ -25,6 +25,10 @@ checkbox.addEventListener('change', () => {
 
 // TABS
 // Debounce function to improve performance
+const tabsButtons = document.querySelectorAll('.tab-btn');
+const tabsContent = document.querySelectorAll('.tab-content');
+
+// Debounce function to improve performance
 function debounce(func, wait = 10, immediate = true) {
   let timeout;
   return function () {
@@ -40,9 +44,6 @@ function debounce(func, wait = 10, immediate = true) {
   };
 }
 
-const tabsButtons = document.querySelectorAll('.tab-btn');
-const tabsContent = document.querySelectorAll('.tab-content');
-
 tabsButtons.forEach(tabBtn => {
   tabBtn.addEventListener('click', debounce(() => {
     tabsButtons.forEach(btn => btn.classList.remove('active_tab'));
@@ -52,6 +53,7 @@ tabsButtons.forEach(tabBtn => {
     document.getElementById(tabId).classList.remove('hidden');
   }));
 });
+
 
 
 const sections = document.querySelectorAll('.section');
