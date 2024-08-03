@@ -74,15 +74,6 @@ If you'd like to contribute to this project:
 
 ## License
 This project is open-source and available under the MIT License.
-
-## Contact
-Feel free to reach out if you have any questions or suggestions:
-
-- Email: ntwalipit@gmail.com
-- LinkedIn: Iam-Ntwali
-- GitHub: Iam-Ntwali
-
 <hr/>
-
-Made with ❤️ by Pacifique Ntwali.
+Made with ❤️ by ###Pacifique Ntwali.
 
